@@ -91,10 +91,8 @@ There is a variable called `fd`, it is different for different sets of stereo ca
 </br>
 
 ## References
-- https://www.youtube.com/watch?v=75YtldrfxBU
-- https://www.youtube.com/watch?v=KOvHsn66sZA
-- https://github.com/OlafenwaMoses/ImageAI/blob/master/imageai/Detection/README.md
+- https://www.youtube.com/watch?v=sW4CVI51jDY
 - https://github.com/OlafenwaMoses/ImageAI
 - https://medium.com/@pwc.emtech.eu/object-detection-with-imageai-106d584984e9
+- https://www.youtube.com/watch?v=75YtldrfxBU
 - https://lmb.informatik.uni-freiburg.de/resources/datasets/StereoEgomotion/
-- https://www.youtube.com/watch?v=sW4CVI51jDY
