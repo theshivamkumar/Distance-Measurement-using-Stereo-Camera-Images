@@ -7,7 +7,7 @@
 [![Stars](https://img.shields.io/github/stars/theshivamkumar/Distance-of-objects-in-stereo-images.svg)](https://github.com/theshivamkumar/Distance-of-objects-in-stereo-images/stargazers)
 
 This is a project that takes a pair of frames from a stereo camera, finds the most prominent object in the image, computes the approximate distance the object is in real life from the stereo camera and speaks the result out. Hence, if modelled into a device, this project can be used as an aid for visually impaired people, as it can speak to them what object is infront of them and at what distance. <br>
-This was my final year B.Tech Project in IIT Jammu.
+This was my final year B.Tech Project at IIT Jammu.
 
 <br>
 
