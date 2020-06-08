@@ -20,8 +20,7 @@ This is a project that takes a pair of frames from a stereo camera, finds the mo
 
 </br>
 
-## Set-Up
-
+## Set-Up and running
 ### Get the requirements
 Set-up for Anaconda users (non-anaconda users may use `pip3` or python-3.6 pip):
 
@@ -35,7 +34,6 @@ pip install pyttsx3==2.87
 ```
 and 
 `sudo apt install espeak` (for text to speech engine).
-
 
 ### Clone the repository 
 
@@ -59,10 +57,7 @@ cd ..
 
 Windows users may use the `type` command instead of `cat` to merge files.
 
-
-</br>
-
-## Run the project
+### Run the project
 
 ```bash
 cd src
@@ -73,17 +68,21 @@ It will print the result and speak out also!
 
 <br>
 
+
 ## Brief Theory
 
 Here mainly two things are being done. The first one is object detection. I have used [ImageAI](https://github.com/OlafenwaMoses/ImageAI) for object detection. It supports YOLOv3, TinyYOLOv3 and Resnet50 models. The most promintent object is used on the particular frame-pair, and is determined by largest area.</br>
-<img align="center" src="https://github.com/theshivamkumar/Distance-of-objects-in-stereo-images/blob/master/Examples_of_Object_Recognition_and_Feature_Matching/ObjectRecognition.png" alt="Object Detection">
+<p align="center">
+  <img src="https://github.com/theshivamkumar/Distance-of-objects-in-stereo-images/blob/master/Examples_of_Object_Recognition_and_Feature_Matching/ObjectRecognition.png" alt="Object Detection"/>
+</p>
 
 
 The second thing is feature matching. After detecting an object, the common features in both the objects are detected and matched, for that I am using [SIFT](https://en.wikipedia.org/wiki/Scale-invariant_feature_transform). This gives me the coordinates of the pixels of the corresponding matches of both the images.</br><br>
-<img align="center" src="https://github.com/theshivamkumar/Distance-of-objects-in-stereo-images/blob/master/Examples_of_Object_Recognition_and_Feature_Matching/FeatureMatching.png" alt="Feature Matching">
+<p align="center">
+  <img src="https://github.com/theshivamkumar/Distance-of-objects-in-stereo-images/blob/master/Examples_of_Object_Recognition_and_Feature_Matching/FeatureMatching.png" alt="Feature Matching"/>
+</p>
 
-
-Finally to calculate the distance, I use the difference in x-coordinates of the pixels of the matched features. Intuitively, the more the difference, the nearer the object and vice-versa. More details are there in the report in 'Docs' folder.
+Finally to calculate the distance, I use the difference in x-coordinates of the pixels of the matched features. Intuitively, the more the difference, the nearer the object and vice-versa. More details are there in the report in `Doc` folder.
 
 </br>
 
