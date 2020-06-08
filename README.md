@@ -6,7 +6,8 @@
 [![Forks](https://img.shields.io/github/forks/theshivamkumar/Distance-of-objects-in-stereo-images.svg)](https://github.com/theshivamkumar/Distance-of-objects-in-stereo-images/network/members)
 [![Stars](https://img.shields.io/github/stars/theshivamkumar/Distance-of-objects-in-stereo-images.svg)](https://github.com/theshivamkumar/Distance-of-objects-in-stereo-images/stargazers)
 
-This is a project that takes a pair of frames from a stereo camera, finds the most prominent object in the image, computes the approximate distance the object is in real life from the stereo camera and speaks the result out. Hence, if modelled into a device, this project can be used as an aid for visually impaired people, as it can speak to them what object is infront of them and at what distance.
+This is a project that takes a pair of frames from a stereo camera, finds the most prominent object in the image, computes the approximate distance the object is in real life from the stereo camera and speaks the result out. Hence, if modelled into a device, this project can be used as an aid for visually impaired people, as it can speak to them what object is infront of them and at what distance. <br>
+This was my final year B.Tech Project in IIT Jammu.
 
 <br>
 
@@ -82,7 +83,10 @@ The second thing is feature matching. After detecting an object, the common feat
   <img src="https://github.com/theshivamkumar/Distance-of-objects-in-stereo-images/blob/master/Examples_of_Object_Recognition_and_Feature_Matching/FeatureMatching.png" alt="Feature Matching"/>
 </p>
 
-Finally to calculate the distance, I use the difference in x-coordinates of the pixels of the matched features. Intuitively, the more the difference, the nearer the object and vice-versa. More details are there in the report in `Doc` folder.
+Finally to calculate the distance, I use the difference in x-coordinates of the pixels of the matched features. Intuitively, the more the difference, the nearer the object and vice-versa. 
+
+The report in the `Doc` folder has the complete details of this project, explaining exactly how to measure the distance. <br>
+There is a variable called `fd`, it is different for different sets of stereo cameras. To find your `fd`, you would reqire the stereo image of an object, prominent in the frame and at a known distance from your stereo camera. You can calculate `fd` as, `fd = (Distance of object from the stereo camera) x (Difference in x-coordinates of the pixels of the matching points in the object in both the images)`. This whole project is under assumption that the stereo camera set would be exactly horizontal, i.e., vertical height of both the cameras would be same.
 
 </br>
 
