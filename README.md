@@ -1,4 +1,4 @@
-# Measuring Distance of objects in stereo camera images
+# Objects Recognitiona and Distance Measurement using Stereo Camera Images
 > Object detection and distance measurement in stereo images. Can be used as an aid for the visually impaired.
 
 [![License](https://img.shields.io/github/license/theshivamkumar/Distance-of-objects-in-stereo-images.svg)](https://github.com/theshivamkumar/Distance-of-objects-in-stereo-images/blob/master/LICENSE)
